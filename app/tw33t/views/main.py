@@ -98,6 +98,7 @@ def tweet_search():
                 'userImageProfile': status['user']['profile_image_url'],
             })
 
+        search_logger.info(f'---------------------------USER:{user}---------------------------')
         search_logger.info(result)
         return jsonify(result)
     except Exception:
