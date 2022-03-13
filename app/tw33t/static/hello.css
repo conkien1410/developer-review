@@ -1,0 +1,75 @@
+body {
+    background-color: #E7E9F5;
+    font-family: 'Heebo', sans-serif
+}
+
+
+.card {
+    width: 750px;
+    border: none;
+    border-radius: 20px
+}
+
+
+.circular--square {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+
+}
+
+
+.tri-right.right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 100%;
+	right: -24px;
+    top: 50%;
+	bottom: auto;
+	border: 12px solid;
+	border-color: #E7E9F5 transparent transparent #E7E9F5;
+
+	@media (max-width: 768px) {
+	    display: none;
+	    border: 0px solid;
+	}
+
+}
+
+.tri-left.left-in:before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0%;
+	left: -24px;
+    top: 50%;
+	bottom: auto;
+	border: 12px solid;
+	border-color: #E7E9F5 #E7E9F5 transparent transparent;
+
+	@media (max-width: 768px) {
+	    display: none;
+	    border: 0px solid;
+	}
+
+}
+
+.talk-bubble {
+  /*margin: 0px;*/
+  display: block;
+  position: relative;
+  width: 100%;
+  /*background-color: red;*/
+  border-radius: 1.5em;
+}
+
+
+/* talk bubble contents */
+.talktext{
+  min-height: 5em;
+  word-wrap: break-word;
+}
+
